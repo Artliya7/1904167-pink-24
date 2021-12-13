@@ -3,55 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="catalog.html">Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">html academy
-              </a>
-            </li>
-          </ul>
+    <div class="background-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link" href="catalog.html">Фотографии
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/">html academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="intro">
+        <p class="intro__slogan">Взгляните на жизнь<br>иначе!
+        </p>
+        <div class="phone">
+          <img class="phone__img" src="img/phone.png" width="320" height="286" alt="Экран мобильного телефона.">
         </div>
-      </nav>
-    </header>
+      </div>
+    </div>
+
     <main class="page-main">
       <h1 class="visually-hidden">Приложение Пинк
       </h1>
 
-      <section class="intro">
-        <div class="intro__wrapper">
-          <header class="intro__header">
-            <h2 class="visually-hidden">Информация о приложении Пинк
-            </h2>
-            <p class="intro__slogan">Взгляните на жизнь<br>иначе!
-            </p>
-          </header>
-          <div class="phone">
-            <img class="phone__img" src="img/phone.png" width="320" height="286" alt="Экран мобильного телефона.">
-          </div>
-        </div>
-        <div class="app-store">
+      <section class="app-store">
+        <h2 class="visually-hidden">Магазин приложения Пинк
+        </h2>
+        <div class="app-store__wrapper">
           <a class="button app-store__button" href="#">Скачать приложение</a>
           <ul class="app-store__list">
             <li class="app-store__item">
@@ -99,6 +101,7 @@
               </h3>
               <p class="advantages__description">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями и<br> заводите новых
               </p>
+              <img class="advantages__image" src="img/iphone.png" width="157" height="320" alt="Iphone.">
             </li>
           </ul>
         </div>
@@ -116,13 +119,13 @@
               </p>
             </blockquote>
             <blockquote class="reviews__item reviews__item--review-2 slider__item">
-              <h3 class="reviews__author-name">Николай Петров
+              <h3 class="reviews__author-name">Сергей Смирнов
               </h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»
+              <p class="reviews__text">«Супер крутое приложение!»
               </p>
             </blockquote>
             <blockquote class="reviews__item reviews__item--review-3 slider__item">
-              <h3 class="reviews__author-name">Николай Петров
+              <h3 class="reviews__author-name">Иван Иванов
               </h3>
               <p class="reviews__text">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br> привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br> фотографии!»
               </p>
@@ -145,19 +148,11 @@
           </h2>
           <table class="rates__list slider__list">
             <tr class="rates__item slider__item">
-              <th class="rates__title rates__title--base">База
+              <th class="rates__title rates__title--base">База<br>1,99 USD
               </th>
-              <th class="rates__title rates__title--standard">Стандарт
+              <th class="rates__title rates__title--standard">Стандарт<br>3,99 USD
               </th>
-              <th class="rates__title rates__title--unlimited">Анлим
-              </th>
-            </tr>
-            <tr class="rates__item slider__item">
-              <th class="rates__price rates__price--base">1,99 USD
-              </th>
-              <th class="rates__price rates__price--standard">3,99 USD
-              </th>
-              <th class="rates__price rates__price--unlimited">9,99 USD
+              <th class="rates__title rates__title--unlimited">Анлим<br>9,99 USD
               </th>
             </tr>
             <tr class="rates__item">
@@ -194,7 +189,7 @@
             <li class="contacts__item">
               <h3 class="contacts__title">Звоните
               </h3>
-              <a class="contacts__phone__link" href="+78005558628">
+              <a class="contacts__link" href="+78005558628">
                 <span class="contacts__phone-mobile">+7 800 555-86-28
                 </span>
               </a>
@@ -202,7 +197,7 @@
             <li class="contacts__item">
               <h3 class="contacts__title">Пишите
               </h3>
-              <a class="contacts__email__link" href="mailto:mail@htmlacademy.ru">
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
                 <span class="contacts__email">mail@htmlacademy.ru
                 </span>
               </a>
@@ -210,7 +205,7 @@
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:
               </h3>
-              <a class="contacts__address__link" href="#">
+              <a class="contacts__link" href="#">
                 <p class="contacts__address">ул. Большая<br>Конюшенная, 19/8
                 </p>
               </a>
@@ -225,7 +220,8 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="#">
-            <img class="page-footer__logo-img" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк.">
+            <img class="page-footer__logo-glasses" src="img/logo-glasses.svg" width="59" height="40" alt="Логотип приложения Пинк - очки.">
+            <img class="page-footer__logo-img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк.">
           </a>
         </div>
         <div class="page-footer__social social">
