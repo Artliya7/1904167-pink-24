@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Фотографии</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -11,7 +12,7 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк.">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -30,15 +31,15 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">html academy
+                <a class="site-list__link" href="https://htmlacademy.ru/">Html academy
                 </a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
-      <div class="intro">
-        <p class="intro__slogan">Фотографии<br>пользователей
+      <div class="intro-catalog">
+        <p class="intro-catalog__slogan">Фотографии<br>пользователей
         </p>
       </div>
     </div>
@@ -49,7 +50,7 @@
 
       <section class="user-photos">
         <div class="user-photos__wrapper">
-          <p class="user-photos__slogan">Взгляните на фотографии, которые<br>выкладывают пользователи!<br>
+          <p class="user-photos__slogan">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
           </p>
           <ul class="user-photos__list">
@@ -181,7 +182,7 @@
         <div class="motivation__wrapper">
           <h2 class="visually-hidden">Мотивация использовать приложение Пинк
           </h2>
-          <p class="motivation__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в<br>телефоне!
+          <p class="motivation__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!
           </p>
           <div class="motivation__column-1">
             <img class="motivation__image" src="img/photo-7.jpg" width="280" height="374" alt="Заснеженная дорога.">
@@ -226,8 +227,10 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="#">
-              <img class="page-footer__logo-glasses" src="img/logo-glasses.svg" width="59" height="40" alt="Логотип приложения Пинк - очки.">
-              <img class="page-footer__logo-img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк.">
+            <img class="page-footer__logo-glasses" src="img/logo-glasses.svg" width="59" height="40" alt="Логотип приложения Пинк - очки.">
+          </a>
+          <a class="page-footer__link" href="#">
+            <img class="page-footer__logo-img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк.">
           </a>
         </div>
         <div class="page-footer__social social">

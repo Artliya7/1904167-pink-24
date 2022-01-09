@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Конкурс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -11,7 +12,7 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения Пинк.">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -30,15 +31,15 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">html academy
+                <a class="site-list__link" href="https://htmlacademy.ru/">Html academy
                 </a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
-      <div class="intro">
-        <p class="intro__slogan">Конкурс на самое<br>безбашенное<br>путешествие с Пинк
+      <div class="intro-form">
+        <p class="intro-form__slogan">Конкурс на самое безбашенное<br>путешествие с Пинк
         </p>
       </div>
     </div>
@@ -55,23 +56,23 @@
             <span class="form__label">
               <label for="form__surname">ФАМИЛИЯ:</label>
             </span>
-            <input class="field" type="text" id="form__surname" name="form__surname" placeholder="Укажите фамилию *" required>
+            <input class="field" type="text" id="form__surname" name="form__surname" value="Укажите фамилию *" required>
           </div>
           <div class="form__name">
             <span class="form__label">
               <label for="form__name">ИМЯ:</label>
             </span>
-            <input class="field" type="text" id="form__name" name="form__name" placeholder="Введите ваше имя *" required>
+            <input class="field" type="text" id="form__name" name="form__name" value="Введите ваше имя *" required>
           </div>
           <div class="form__patronymic">
             <span class="form__label">
               <label for="form__patronymic">ОТЧЕСТВО:</label>
             </span>
-            <input class="field" type="text" id="form__patronymic" name="form__patronymic" placeholder="Ну и отчество тоже">
+            <input class="field" type="text" id="form__patronymic" name="form__patronymic" value="Ну и отчество тоже">
           </div>
 
           <fieldset class="form-filter">
-            <legend class="form-filter__title">Ваши безбашенные<br>достижения в путешествии
+            <legend class="form-filter__title">Ваши безбашенные достижения в путешествии
             </legend>
             <ul class="form-filter__list">
               <li class="form-filter__item">
@@ -138,17 +139,17 @@
             <span class="form__label">
               <label for="form__tel">НОМЕР ТЕЛЕФОНА</label>
             </span>
-            <input class="field" type="tel" id="form__tel" name="form__tel" placeholder="Номер, пожалуйста">
+            <input class="field" type="tel" id="form__tel" name="form__tel" value="Номер, пожалуйста">
           </div>
           <div class="form__email">
             <span class="form__label">
               <label for="form__email">АДРЕС ПОЧТЫ</label>
             </span>
-            <input class="field" type="email" id="form__email" name="form__email" placeholder="Введите почту *" required>
+            <input class="field" type="email" id="form__email" name="form__email" value="Введите почту *" required>
           </div>
 
           <fieldset class="form-filter">
-            <legend class="form-filter__title">С каким приложением<br>путешествовали?
+            <legend class="form-filter__title">С каким приложением путешествовали?
             </legend>
             <ul class="form-filter__list">
               <li class="form-filter__item">
@@ -178,17 +179,19 @@
             </ul>
           </fieldset>
           <div class="form__comments">
-            <span>
+            <span class="form__label">
               <label for="form__comments">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
             </span>
-            <textarea class="field textarea" id="form__comments" name="form__comments" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="field textarea" id="form__comments" name="form__comments" value="Можно прям в красках, не стесняясь в выражениях">Можно прям в красках, не стесняясь в выражениях
             </textarea>
           </div>
+          <div class="form__container">
           <button class="form__button" type="submit">Отправить форму
           </button>
           <div class="form__footnote">
             <span class="form__star">*</span>— обязательные поля
           </div>
+        </div>
 
         </div>
       </form>
@@ -199,8 +202,10 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="#">
-              <img class="page-footer__logo-glasses" src="img/logo-glasses.svg" width="59" height="40" alt="Логотип приложения Пинк - очки.">
-              <img class="page-footer__logo-img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк.">
+            <img class="page-footer__logo-glasses" src="img/logo-glasses.svg" width="59" height="40" alt="Логотип приложения Пинк - очки.">
+          </a>
+          <a class="page-footer__link" href="#">
+            <img class="page-footer__logo-img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип приложения Пинк.">
           </a>
         </div>
         <div class="page-footer__social social">

@@ -1,10 +1,14 @@
 .app-store {
   background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .app-store__wrapper {
   padding: 28px 20px 38px;
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -14,12 +18,25 @@
   line-height: 18px;
   text-align: center;
   color: #ffffff;
+  text-decoration: none;
   padding: 21px 39px;
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
+  margin: 0 auto;
   margin-bottom: 32px;
-  display: inline-block;
+  display: block;
+  width: 280px;
+}
+
+.app-store__list {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  margin: 0 auto;
+  align-items: center;
+  gap: 35px;
+  width: 205px;
 }
 
 .app-store__item {

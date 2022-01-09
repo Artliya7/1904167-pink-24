@@ -1,4 +1,32 @@
 .page-header {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 22px 20px 21px;
+  height: 66px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    height: 110px;
+    padding: 43px 20px 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 110px;
+    padding: 43px 130px 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-header__logo {
+  display: inline-block;
+}
+
+.logo-glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-right: 12px;
+  }
 }
