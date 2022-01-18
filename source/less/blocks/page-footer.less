@@ -32,3 +32,23 @@
     margin: 0;
   }
 }
+
+.page-footer__pink-logo {
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+.page-footer__pink-logo--visible-phone {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__pink-logo--visible-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
