@@ -1,12 +1,26 @@
 .slider__toggles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 19px;
 }
 
-.slider__toggle button {
+.slider__toggle {
   background-color: rgba(40, 54, 69, 0.3);
   width: 6px;
   height: 6px;
   border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle--current {
+  background-color: #ffffff;
+  outline: 3px solid #283645;
 }
