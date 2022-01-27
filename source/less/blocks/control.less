@@ -1,6 +1,40 @@
+.control {
+  position: relative;
+  display: block;
+  padding-left: 57px;
+}
+
+.control__mark {
+  position: absolute;
+  top: -4px;
+  left: 2px;
+}
+
 .control__label {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 10px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.control__input[type="radio"]:checked + .control__mark::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
 }

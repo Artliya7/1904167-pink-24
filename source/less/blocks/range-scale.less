@@ -1,1 +1,35 @@
-/*Стили для range-scale.less*/
+.range-scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+  margin: 0 auto 73px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+}
+
+.range-scale--fill,
+.range-scale--contrast {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.range-scale__toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  top: -8px;
+  left: 193px;
+}

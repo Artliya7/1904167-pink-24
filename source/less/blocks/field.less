@@ -10,4 +10,21 @@
   padding: 14px 20px 15px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      padding-right: 59px;
+      position: relative;
+    }
+
+    &--tablet::before {
+      position: absolute;
+      content: "";
+      width: 59px;
+      height: 59px;
+      background-color: #e5e5e5;
+      top: 0;
+      left: 0;
+    }
+  }
 }

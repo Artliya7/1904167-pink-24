@@ -1,7 +1,12 @@
 .textarea {
   resize: none;
-  height: 197px;
+  min-height: 197px;
   font-size: 18px;
   line-height: 30px;
   font-family: inherit;
+
+  @media (min-width: @tablet-width) {
+    min-width: 496px;
+    min-height: 189px;
+  }
 }
