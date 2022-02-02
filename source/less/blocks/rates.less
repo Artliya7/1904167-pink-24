@@ -6,10 +6,19 @@
   width: 280px;
   padding: 81px 20px 49px;
   margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 81px 103px 98px;
+  }
 }
 
 .rates__list {
   border-collapse: collapse;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 
 .rates__title--empty,
@@ -19,7 +28,7 @@
   width: 276px;
 }
 
-/*.rates__title--base,
+.rates__title--base,
 .rates__title--standard,
 .rates__title--unlimited {
   background-color: #283645;
@@ -27,7 +36,7 @@
   border-radius: 1px 0 0 0;
 }
 
-.rates__title--standard {
+/*.rates__title--standard {
   display: block;
   width: 276px;
 }*/

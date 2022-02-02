@@ -6,8 +6,21 @@
   margin: 0 auto 73px;
 
   @media (min-width: @tablet-width) {
+    width: 202px;
     grid-column: 2/-1;
     grid-row: 1/2;
+
+    &--crop {
+      margin-top: 11px;
+    }
+
+    &--fill {
+      margin-top: 74px;
+    }
+
+    &--contrast {
+      margin-top: 140px;
+    }
   }
 }
 
@@ -32,4 +45,18 @@
   cursor: pointer;
   top: -8px;
   left: 193px;
+
+  @media (min-width: @tablet-width) {
+    &--crop {
+      left: 163px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      left: 96px;
+    }
+  }
 }

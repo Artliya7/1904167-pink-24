@@ -95,165 +95,182 @@
             <span class="form__fill-in">Пожалуйста, заполните форму ниже:
             </span>
           </p>
-          <div class="form__surname">
-            <span class="form__label">
-              <label for="form__surname">ФАМИЛИЯ:</label>
-            </span>
-            <input class="field" type="text" id="form__surname" name="form__surname" value="Укажите фамилию *" required>
-          </div>
-          <div class="form__name">
-            <span class="form__label">
-              <label for="form__name">ИМЯ:</label>
-            </span>
-            <input class="field" type="text" id="form__name" name="form__name" value="Введите ваше имя *" required>
-          </div>
-          <div class="form__patronymic">
-            <span class="form__label">
-              <label for="form__patronymic">ОТЧЕСТВО:</label>
-            </span>
-            <input class="field" type="text" id="form__patronymic" name="form__patronymic" value="Ну и отчество тоже">
-          </div>
-
-          <fieldset class="form-filter">
-            <legend class="form-filter__title">Ваши безбашенные достижения в путешествии
-            </legend>
-            <ul class="form-filter__list form-filter__list--successes">
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="selfie" checked>
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Сделал селфи с акулой</span>
-                </label>
-              </li>
-              <li class="form-filter__item form-filter__item--second">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="beach" checked>
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Обгорел на пляже</span>
-                </label>
-              </li>
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="Norris">
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Видел Чака Норриса</span>
-                </label>
-              </li>
-              <li class="form-filter__item form-filter__item--fourth">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="souvenirs">
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Накупил сувениров</span>
-                </label>
-              </li>
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="tower" checked>
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Удержал башню</span>
-                </label>
-              </li>
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="hotel">
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Разгромил отель</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form-filter">
-            <legend class="form-filter__title form-filter__title--contacts">контактная информация
-            </legend>
-            <div class="form__tel form__tel--tablet">
-              <span class="form__label form__label--tablet">
-                <label for="form__tel">НОМЕР ТЕЛЕФОНА</label>
-              </span>
-              <input class="field field--tablet" type="tel" id="form__tel" name="form__tel" value="Номер, пожалуйста">
-            </div>
-            <div class="form__email form__email--tablet ">
-              <span class="form__label form__label--tablet">
-                <label for="form__email">АДРЕС ПОЧТЫ</label>
-              </span>
-              <input class="field field--tablet" type="email" id="form__email" name="form__email" value="Введите почту *" required>
+          <fieldset class="form-filter form-filter--data">
+            <div class="form-filter__wrapper form-filter__wrapper--data">
+              <legend class="form-filter__title form-filter__title--data">
+              </legend>
+              <div class="form__surname">
+                <span class="form__label">
+                  <label for="form__surname">ФАМИЛИЯ:</label>
+                </span>
+                <input class="field" type="text" id="form__surname" name="form__surname" value="Укажите фамилию *" required>
+              </div>
+              <div class="form__name">
+                <span class="form__label">
+                  <label for="form__name">ИМЯ:</label>
+                </span>
+                <input class="field" type="text" id="form__name" name="form__name" value="Введите ваше имя *" required>
+              </div>
+              <div class="form__patronymic">
+                <span class="form__label">
+                  <label for="form__patronymic">ОТЧЕСТВО:</label>
+                </span>
+                <input class="field" type="text" id="form__patronymic" name="form__patronymic" value="Ну и отчество тоже">
+              </div>
             </div>
           </fieldset>
 
-          <fieldset class="form-filter">
-            <legend class="form-filter__title">С каким приложением путешествовали?
-            </legend>
-            <ul class="form-filter__list">
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="iOS" checked>
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Pink для iOS</span>
-                </label>
-              </li>
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="Android">
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Pink на Android</span>
-                </label>
-              </li>
-              <li class="form-filter__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="radio" name="Windows">
-                  <span class="control__mark">
-                    <svg aria-hidden="true" focusable="false" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#e5e5e5" stroke-width="2"/>
-                    </svg>
-                  </span>
-                  <span class="control__label">Windows Phone</span>
-                </label>
-              </li>
-            </ul>
+          <fieldset class="form-filter form-filter--successes">
+            <div class="form-filter__wrapper form-filter__wrapper--bg">
+              <legend class="form-filter__title">Ваши безбашенные достижения в путешествии
+              </legend>
+              <ul class="form-filter__list form-filter__list--successes">
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="selfie" checked>
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="form-filter__item form-filter__item--second">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="beach" checked>
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="Norris">
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="form-filter__item form-filter__item--fourth">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="souvenirs">
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="tower" checked>
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="checkbox" name="hotel">
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" y="1" width="37" height="37" rx="2" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="form-filter">
-            <legend class="form-filter__title">ОПИШИТЕ СВОИ ЭМОЦИИ
-            </legend>
-            <textarea class="field textarea" id="form__comments" name="form__comments" value="Можно прям в красках, не стесняясь в выражениях">Можно прям в красках, не стесняясь в выражениях
-            </textarea>
+
+          <fieldset class="form-filter form-filter--contacts">
+            <div class="form-filter__wrapper">
+              <legend class="form-filter__title form-filter__title--contacts">контактная информация
+              </legend>
+              <div class="form__tel form__tel--tablet">
+                <span class="form__label form__label--tablet">
+                  <label for="form__tel">НОМЕР ТЕЛЕФОНА</label>
+                </span>
+                <input class="field field--tablet" type="tel" id="form__tel" name="form__tel" value="Номер, пожалуйста">
+              </div>
+              <div class="form__email form__email--tablet ">
+                <span class="form__label form__label--tablet">
+                  <label for="form__email">АДРЕС ПОЧТЫ</label>
+                </span>
+                <input class="field field--tablet" type="email" id="form__email" name="form__email" value="Введите почту *" required>
+              </div>
+            </div>
           </fieldset>
+
+          <fieldset class="form-filter form-filter--apps">
+            <div class="form-filter__wrapper form-filter__wrapper--bg">
+              <legend class="form-filter__title">С каким приложением путешествовали?
+              </legend>
+              <ul class="form-filter__list">
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="iOS" checked>
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Pink для iOS</span>
+                  </label>
+                </li>
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="Android">
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Pink на Android</span>
+                  </label>
+                </li>
+                <li class="form-filter__item">
+                  <label class="control">
+                    <input class="visually-hidden control__input" type="radio" name="Windows">
+                    <span class="control__mark">
+                      <svg aria-hidden="true" focusable="false" width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="20.5" cy="20.5" r="19.5" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+                      </svg>
+                    </span>
+                    <span class="control__label">Windows Phone</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-filter form-filter--comments">
+            <div class="form-filter__wrapper">
+              <legend class="form-filter__title">ОПИШИТЕ СВОИ ЭМОЦИИ
+              </legend>
+              <textarea class="field textarea" id="form__comments" name="form__comments" value="Можно прям в красках, не стесняясь в выражениях">Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </div>
+          </fieldset>
+
           <div class="form__container">
-          <button class="form__button" type="submit">Отправить форму
-          </button>
-          <div class="form__footnote">
-            <span class="form__star">*</span>— обязательные поля
+            <button class="form__button" type="submit">Отправить форму
+            </button>
+            <div class="form__footnote">
+              <span class="form__star">*</span>— обязательные поля
+            </div>
           </div>
         </div>
       </form>

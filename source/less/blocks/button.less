@@ -10,8 +10,14 @@
 .button__wrapper {
   @media (min-width: @tablet-width) {
     grid-column: 2/-1;
-    grid-row: 1/2;
-    margin-top: 236px;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 44px;
+    align-items: end;
   }
 }
 
@@ -20,10 +26,19 @@
   border: 3px solid #d22856;
   padding: 18px 90px;
   margin-bottom: 12px;
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 42px;
+    margin-bottom: 0;
+  }
 }
 
 .button--cancel {
   color: rgba(40, 54, 69, 0.1);
   border: 3px solid rgba(40, 54, 69, 0.1);
   padding: 18px 103px;
+
+  @media (min-width: @desktop-width) {
+    padding: 18px 55px;
+  }
 }

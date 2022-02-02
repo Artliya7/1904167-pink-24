@@ -1,12 +1,72 @@
 .form-filter {
-  margin: 38px 0 47px;
-  border: none;
+  margin: 0;
   padding: 0;
+  border: none;
+}
+
+.form-filter__wrapper {
+  width: 280px;
+  padding: 38px 20px 44px;
+  margin: 0 auto;
+
+  &--bg {
+    background-color: #f2f2f2;
+
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+    }
+  }
+
+  &--data {
+    padding-top: 0;
+  }
 
   @media (min-width: @tablet-width) {
-    border: 2px solid #e5e5e5;
-    border-radius: 1px;
-    padding: 54px 60px 50px;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 130px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-filter--apps {
+    order: 2;
+  }
+
+  .form-filter--contacts {
+    order: 3;
+  }
+
+  .form-filter--successes {
+    order: 4;
+  }
+
+  .form-filter--comments {
+    order: 5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-filter--comments {
+    grid-column: 1/-1;
+  }
+
+  .form-filter--apps {
+    grid-column: 2/3;
+  }
+
+  .form-filter--contacts {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-filter--successes {
+    grid-column: 1/-1;
   }
 }
 
@@ -23,8 +83,12 @@
     display: none;
   }
 
+  &--data {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 35px;
 
     &--contacts {
       display: block;
